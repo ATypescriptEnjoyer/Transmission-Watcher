@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+    transmission-watcher-csharp:
+      environment: 
+        - PGID=1000
+        - PUID=1000
+      container_name: transmission-watcher-csharp
+      build: .
+      stdin_open: true
+      tty: true
+      restart: always
+        
+networks:
+  default:
+    external:
+      name: docker_default
+
