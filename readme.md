@@ -7,6 +7,11 @@ Watches transmission for completed seeds and automatically pauses them.
 
 Edit config.json with your transmission hostname, post, and RPC location, then run start.sh
 
+## Dependencies
+
+* .NET 5.0
+* Docker
+
 ## Notes
 
 * docker-compose.yml contains my network that my transmission is located in, and works internally. feel free to put it in its own network if you're planning on accessing transmission via an external source.
