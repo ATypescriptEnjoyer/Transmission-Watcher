@@ -1,14 +1,10 @@
 version: '3.1'
 services:
   transmission-watcher:
+    image: ghcr.io/sasharyder/transmission-watcher
     environment:
       - TRANSMISSION_PATH=transmission:9091/transmission/rpc
       - STOP_RATIO=1.3
       - HELP_SOLO_PEERS=true
     container_name: transmission-watcher
-    build: .
     restart: unless-stopped
-
-networks:
-  default:
-    name: docker_default
