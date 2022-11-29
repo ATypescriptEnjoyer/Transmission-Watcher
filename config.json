@@ -1,7 +1,0 @@
-{
-    "transmission": {
-        "hostname": "transmission",
-        "port": 9091,
-        "path": "/transmission/rpc"
-    }
-}
